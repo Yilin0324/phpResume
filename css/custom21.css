@@ -50,13 +50,13 @@ header a.active:after {
 #hero .hero-container {
   position: absolute;
   bottom: 0;
-  top: 0;
-  left: 20%;
+  top: 30%;
+  left: 10%;
   right: 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: column; */
   padding: 0 15px;
 }
 
@@ -64,18 +64,24 @@ header a.active:after {
   margin: 0 0 10px 0;
   font-size: 75px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #fff;
+  color: #eee;
 }
 
 #hero h2 {
-  color: #eee;
+  color: #ccc;
   margin-bottom: 50px;
-  font-size: 16px;
+  margin-left: 7%;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
 }
-
+#hero p{
+  width: 480px;
+  padding: 0;
+  letter-spacing: 1px;
+  color: #666;
+}
 
 @media (min-width: 1024px) {
   #hero {
@@ -141,7 +147,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about h5 {
-  font-size: 25px;
+  font-size: 26px;
 }
 .about p {
   font-size: 18px;
@@ -149,9 +155,10 @@ section {
 .about .list-social a {
   font-size: 20px;
   transition: 0.4s;
+  color: #ffb727;
 }
 .about a:hover {
-  color: #ffb727;
+  color:dodgerblue;
 }
 
 /*--------------------------------------------------------------

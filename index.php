@@ -21,7 +21,7 @@
     <!-- 導覽列 -->
 <header class="fixed-top" id="Menu">
     <nav class="navbar  navbar-expand-md navbar-dark" id="header-nav">
-      <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#about"><i class="far fa-smile"></i>
+      <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#hero"><i class="far fa-smile"></i>
           Resume</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
@@ -42,8 +42,17 @@
   style="background: url('img/hero2.jpg') top right;background-size: cover;
   object-fit: cover;">
     <div class="hero-container">
+      <div class="col">
       <h1>Yi-Lin Chang</h1>
-      <h2 class="mt-3"> Web designer & performing artist</h2>
+      <h2 class="mt-4"> Web designer & performing artist</h2>
+      <p class="col">
+      我是張貽琳，畢業於國立台灣戲曲學院戲曲音樂系，
+      對生活充滿好奇心，樂於嘗試不同的可能性，並探索自己的能力，勇於挑戰極限。
+      </p>
+      <p class="col">
+      因緣際會接觸到前端技術並且產生強烈的熱忱，便毅然跨出舒適圈，專心學習程式技術。
+      </p>
+      </div>
     </div>
   </section><!-- End home Section -->
 
@@ -51,7 +60,9 @@
     
 <section id="about" class="about">
     <div class="container">
-    <div class="section-title"></div>
+    <div class="section-title">
+    <!-- <h2>about</h2> -->
+    </div>
 
 <div class="row my-3 mx-2">
     <div class="image col-lg-4 mb-2" style='height:380px;width:350px'>
@@ -251,7 +262,7 @@
       copyright &copy; <span>sanny</span>. all rights reserved
     </small>
     <div id="Arrow" class="position-fixed">
-      <a href="#about" class="btn btn-warning text-white rounded-circle p-2 border-0">
+      <a href="#hero" class="btn btn-warning text-white rounded-circle p-2 border-0">
         <i class="fas fa-angle-up"></i>
       </a>
     </div>
