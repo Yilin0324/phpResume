@@ -44,34 +44,37 @@
                     <!--主選單放此-->
                     <h3>後台管理選單</h3>
                 <ul class="list-group">
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
+                    <a href="./backend.php?do=hero">主頁文字管理</a>
+                    </li>
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="./backend.php?do=image">履歷照片管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=personal">個人資料管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=job">求職目標管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=experience">經歷管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=education">學歷管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=skills">技能管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=portfolio">作品集管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=biography">自傳管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=admin">管理者帳號管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-warning list-group-item-action ">
+                    <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=menu">選單管理</a>
                     </li>
                 </ul>

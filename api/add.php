@@ -20,14 +20,20 @@ if(isset($_FILES['img']['tmp_name'])){
             $data['href']=$_POST['href'];
         break;
         case "education":
-            $data['text']=$_POST['text'];
-            $data['title']=$_POST['title'];
-            $data['dwork']=$_POST['dwork'];
-        break;
         case "experience":
             $data['text']=$_POST['text'];
             $data['title']=$_POST['title'];
             $data['dwork']=$_POST['dwork'];
+        break;
+        // case "experience":
+        //     $data['text']=$_POST['text'];
+        //     $data['title']=$_POST['title'];
+        //     $data['dwork']=$_POST['dwork'];
+        // break;
+        case "hero":
+            $data['text']=$_POST['text'];
+            $data['title']=$_POST['title'];
+            $data['subject']=$_POST['subject'];
         break;
         case "skills":
             $data['text']=$_POST['text'];

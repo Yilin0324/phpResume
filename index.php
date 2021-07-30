@@ -39,22 +39,27 @@
     </nav>
 </header>
  <!-- home -->
+<?php
+  $heros=$Hero->all(['sh'=>1]);
+
+    foreach($heros as $hero){
+?>
   <section id="hero" 
-  style="background: url('img/hero2.jpg') top right; background-size: cover;
-  object-fit: cover; background-attachment: fixed;">
+  style="background: url('img/<?=$hero['img'];?>') right center no-repeat; background-size: cover;
+  object-fit: cover; background-attachment: fixed;" >
     <div class="hero-container">
       <div class="col">
-      <h1 data-aos="fade-up">Yi-Lin Chang</h1>
-      <h2 class="mt-4" data-aos="fade-up" data-aos-delay="500"> Web designer & performing artist</h2>
-      <p class="col" data-aos="fade-up" data-aos-delay="1000">
-      我是張貽琳，畢業於國立台灣戲曲學院戲曲音樂系，
-      對生活充滿好奇心，樂於嘗試不同的可能性，並探索自己的能力，勇於挑戰極限。
-      <br><br>
-      因緣際會接觸到前端技術並且產生強烈的熱忱，便毅然跨出舒適圈，專心學習程式技術。
+      <h1 data-aos="fade-up"><?=$hero['subject'];?></h1>
+      <h2 class="mt-4" data-aos="fade-up" data-aos-delay="500"><?=$hero['title'];?></h2>
+      <p class="col d-none d-md-block" data-aos="fade-up" data-aos-delay="1000">
+      <?=$hero['text'];?>
       </p>
       </div>
     </div>
   </section><!-- End home Section -->
+<?php        
+    }
+?>
 
 <div class="container">
     
@@ -170,7 +175,6 @@
 
     <div class="section-title my-2">
         <h2>skills</h2>
-        <p class="mb-2" data-aos="fade-up">I am a quick learner and specialize in multitude of skills required for Web Application Development and Product Design</p>
     </div>
 
     <div class="row skills-content">

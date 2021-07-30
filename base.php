@@ -6,6 +6,7 @@ date_default_timezone_set("Asia/Taipei");
 
 
 $ts=[
+        "hero"=>"主頁內容管理",
         "image"=>"履歷照片",
         "ad"=>"個人基本資料管理",
         "personal"=>"個人基本資料管理",
@@ -19,6 +20,7 @@ $ts=[
         "biography"=>"自傳管理"
     ]; 
 $as=[
+        "hero"=>"新增主頁內容",
         "image"=>"新增履歷照片",
         "ad"=>"新增個人基本資料",
         "personal"=>"新增個人基本資料",
@@ -32,6 +34,7 @@ $as=[
         "biography"=>"新增自傳"
     ]; 
 $hs=[
+        "hero"=>"主頁",
         "image"=>"履歷照片",
         "ad"=>"個人基本資料",
         "personal"=>"個人基本資料",
@@ -175,6 +178,7 @@ function to($url){
 }
 
 
+ $Hero=new DB('hero');
  $Image=new DB('image');
  $Personal=new DB('personal');
  $Job=new DB('job');

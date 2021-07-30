@@ -34,17 +34,24 @@ foreach($ids as $key => $id){
                 $row['subject']=$_POST['subject'][$key];
                 $row['href']=$_POST['href'][$key];
             break;
-            case 'experience':
+            case 'hero':
                 $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
                 $row['text']=$_POST['text'][$key];
+                $row['subject']=$_POST['subject'][$key];
                 $row['title']=$_POST['title'][$key];
-                $row['dwork']=$_POST['dwork'][$key];
             break;
+            case 'experience':
             case 'education':
                 $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
                 $row['text']=$_POST['text'][$key];
                 $row['title']=$_POST['title'][$key];
                 $row['dwork']=$_POST['dwork'][$key];
+            break;
+            // case 'education':
+            //     $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
+            //     $row['text']=$_POST['text'][$key];
+            //     $row['title']=$_POST['title'][$key];
+            //     $row['dwork']=$_POST['dwork'][$key];
             break;
             case 'skills':
                 $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;

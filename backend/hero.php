@@ -5,33 +5,41 @@
         <table width="100%" class="table table-bordered table-striped text-center">
             <tbody>
                 <tr>
-                    <td width="45%">網站標題</td>
-                    <td width="23%">替代文字</td>
-                    <td width="7%">顯示</td>
-                    <td width="7%">刪除</td>
+                    <td>背景</td>
+                    <td>標題</td>
+                    <td>次標題</td>
+                    <td>文字</td>
+                    <td width="5%">顯示</td>
+                    <td width="5%">刪除</td>
                     <td></td>
                 </tr>
             <?php
 
-                $rows=$Image->all();
+                $rows=$Hero->all();
                 foreach ($rows as $key => $value) {
                 ?>
                 <tr>
-                    <td width="45%">
+                    <td>
                         <img src="img/<?=$value['img'];?>" style="width:120px;height:150px;">
                     </td>
-                    <td width="23%">
-                        <input type="text" name='text[]' value="<?=$value['text'];?>">
+                    <td>
+                        <input type="text" name='subject[]' value="<?=$value['subject'];?>">
                     </td>
-                    <td width="7%">
-                        <input type="radio" name="sh" value="<?=$value['id'];?>" <?=($value['sh']==1)?"checked":"";?>>
+                    <td>
+                        <input type="text" name='title[]' value="<?=$value['title'];?>">
                     </td>
-                    <td width="7%">
+                    <td>
+                        <textarea name="text[]"  style="width:90%;height:60px"><?=$value['text'];?></textarea>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=($value['sh']==1)?"checked":"";?>>
+                    </td>
+                    <td>
                         <input type="checkbox" name="del[]" value="<?=$value['id'];?>">    
                     </td>
                     <td>
                         <input type="button"  value="更換圖片" 
-                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/image_update.php?id=<?=$value['id'];?>&#39;)">
+                            onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/hero_update.php?id=<?=$value['id'];?>&#39;)">
                     </td>
                     <input type="hidden" name="id[]" value="<?=$value['id'];?>">
                 </tr>
