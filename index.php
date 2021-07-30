@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="css/custom21.css">
+
     <title>我的線上履歷表</title>
 </head>
 <body  id="top">
@@ -39,17 +40,16 @@
 </header>
  <!-- home -->
   <section id="hero" 
-  style="background: url('img/hero2.jpg') top right;background-size: cover;
-  object-fit: cover;">
+  style="background: url('img/hero2.jpg') top right; background-size: cover;
+  object-fit: cover; background-attachment: fixed;">
     <div class="hero-container">
       <div class="col">
-      <h1>Yi-Lin Chang</h1>
-      <h2 class="mt-4"> Web designer & performing artist</h2>
-      <p class="col">
+      <h1 data-aos="fade-up">Yi-Lin Chang</h1>
+      <h2 class="mt-4" data-aos="fade-up" data-aos-delay="500"> Web designer & performing artist</h2>
+      <p class="col" data-aos="fade-up" data-aos-delay="1000">
       我是張貽琳，畢業於國立台灣戲曲學院戲曲音樂系，
       對生活充滿好奇心，樂於嘗試不同的可能性，並探索自己的能力，勇於挑戰極限。
-      </p>
-      <p class="col">
+      <br><br>
       因緣際會接觸到前端技術並且產生強烈的熱忱，便毅然跨出舒適圈，專心學習程式技術。
       </p>
       </div>
@@ -61,14 +61,14 @@
 <section id="about" class="about">
     <div class="container">
     <div class="section-title">
-    <!-- <h2>about</h2> -->
+    <h2>about me</h2>
     </div>
 
 <div class="row my-3 mx-2">
-    <div class="image col-lg-4 mb-2" style='height:380px;width:350px'>
+    <div class="image col-lg-4 mb-2" style='height:380px;width:350px'  data-aos="fade-right">
         <img src="img/<?=$Image->find(['sh'=>1])['img'];?>" class="h-100">
     </div>
-    <div class="col-lg-8">
+    <div class="col-lg-8"  data-aos="fade-left" data-aos-delay="100">
     <div class="content">
         <h5 class="mt-4"><strong>張貽琳</strong></h5> 
         <h5 class="mt-2">CHANG YI LIN</h5>
@@ -122,7 +122,7 @@
 
       <div class="row">
         <div class="col-lg-6 g-lg-5">
-            <h3 class="resume-title mb-3">學歷</h3>
+            <h3 class="resume-title mb-3" data-aos="fade-up">學歷</h3>
 
         <?php
         $educations=$Education->all(['sh'=>1]);
@@ -130,7 +130,7 @@
         foreach($educations as $education){
         ?>
 
-          <div class="resume-item">
+          <div class="resume-item" data-aos="fade-up"> 
             <h4><?=$education['title'];?></h4>
             <h5><?=$education['dwork'];?></h5>
             <p><?=$education['text'];?></p>
@@ -142,7 +142,7 @@
         </div>
 
         <div class="col-lg-6 g-lg-5">
-            <h3 class="resume-title mb-3">經歷</h3>
+            <h3 class="resume-title mb-3" data-aos="fade-up">經歷</h3>
 
         <?php
         $experiences=$Experience->all(['sh'=>1]);
@@ -150,7 +150,7 @@
         foreach($experiences as $experience){
         ?>
 
-          <div class="resume-item">
+          <div class="resume-item" data-aos="fade-up">
             <h4><?=$experience['title'];?></h4>
             <h5><?=$experience['dwork'];?></h5>
             <p><?=$experience['text'];?></p>
@@ -170,17 +170,17 @@
 
     <div class="section-title my-2">
         <h2>skills</h2>
-        <p>I am a quick learner and specialize in multitude of skills required for Web Application Development and Product Design</p>
+        <p class="mb-2" data-aos="fade-up">I am a quick learner and specialize in multitude of skills required for Web Application Development and Product Design</p>
     </div>
 
-    <div class="row skills-content ">
+    <div class="row skills-content">
     <?php
         $skillss=$Skills->all(['sh'=>1]);
 
         foreach($skillss as $skills){
     ?>
 
-        <div class="col-sm-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3"  data-aos="zoom-in" data-aos-delay="500">
             <h4><?=$skills['subject'];?></h4>
             <hr>
             <p><?=$skills['text'];?></p>
@@ -199,7 +199,7 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>My Portfolio</h2>
+        <h2>Portfolio</h2>
       </div>
 
     <div class="row">
@@ -209,7 +209,7 @@
         foreach($ports as $port){
         ?>
 
-    <div class="col-sm-6 col-lg-3 mb-4">
+    <div class="col-sm-6 col-lg-3 mb-4" data-aos="flip-left">
         <div class="card portfolio-item">
             <a href="<?=$port['href'];?>"><img src="img/<?=$port['img'];?>" class="card-img"></a>
             <div class="card-body">
@@ -232,7 +232,7 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>My Biography</h2>
+        <h2>Biography</h2>
       </div>
 
     <div class="row">
@@ -242,7 +242,7 @@
         foreach($biographys as $biography){
         ?>
 
-    <div class="col mb-4">
+    <div class="col mb-4"  data-aos="fade-up">
         <p><?=$biography['text'];?></p>
     </div>
     
@@ -272,11 +272,13 @@
 
 
 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
