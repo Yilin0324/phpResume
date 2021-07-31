@@ -45,7 +45,7 @@
                     <h3>後台管理選單</h3>
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-info list-group-item-action ">
-                    <a href="./backend.php?do=hero">主頁文字管理</a>
+                    <a href="./backend.php?do=hero">主頁管理</a>
                     </li>
                     <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="./backend.php?do=image">履歷照片管理</a>
@@ -74,9 +74,7 @@
                     <li class="list-group-item list-group-item-info list-group-item-action ">
                     <a href="?do=admin">管理者帳號管理</a>
                     </li>
-                    <li class="list-group-item list-group-item-info list-group-item-action ">
-                    <a href="?do=menu">選單管理</a>
-                    </li>
+                    
                 </ul>
 
 
@@ -91,19 +89,19 @@
                             <td style="width:70%;font-weight:800; border:#333 1px solid; border-radius:3px; text-align: center;"
                                 class="cent"><a href="?do=admin" style="color:#000; text-decoration:none;">後台管理區</a>
                             </td>
-                            <td><button onclick="location.replace(&#39;../api/logout.php&#39;)"
+                            <td><button onclick="location.replace(&#39;index.php&#39;)"
                                     style="width:99%; margin-right:2px; height:50px;">管理登出</button></td>
                         </tr>
                     </tbody>
                 </table>
                 <?php
-								$do=(isset($_GET['do']))?$_GET['do']:'image';
+								$do=(isset($_GET['do']))?$_GET['do']:'hero';
 								$file="backend/".$do.".php";
 								// 先判斷檔案是否存在
 								if(file_exists($file)){
 									include $file;
 								}else{
-									include "backend/image.php";
+									include "backend/hero.php";
 								}
 	
 
