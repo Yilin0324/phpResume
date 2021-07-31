@@ -13,7 +13,7 @@
                 <?php
 
 $all=$Biography->count();
-$div=5;
+$div=2;
 $pages= ceil($all/$div);
 $now=isset($_GET['p'])?$_GET['p']:1;
 $start=($now-1)*$div;
@@ -23,7 +23,7 @@ foreach ($rows as $key => $value) {
 <tr>
 
     <td>
-        <textarea name="text[]" style="width:90%;height:50px;"><?=$value['text'];?></textarea>
+        <textarea name="text[]" style="width:90%;height:100px;"><?=$value['text'];?></textarea>
     </td>
     <td>
         <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=($value['sh']==1)?"checked":"";?>>

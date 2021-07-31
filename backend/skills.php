@@ -26,7 +26,7 @@ foreach ($rows as $key => $value) {
         <input type="text" name="subject[]" value="<?=$value['subject'];?>">
     </td>
     <td>
-        <textarea name="text[]"  style="width:90%;height:60px"><?=$value['text'];?></textarea>
+        <textarea name="text[]"  style="width:90%;height:65px"><?=$value['text'];?></textarea>
     </td>
     <td>
         <input type="checkbox" name="sh[]" value="<?=$value['id'];?>" <?=($value['sh']==1)?"checked":"";?>>

@@ -16,7 +16,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/custom21.css">
 
-    <title>我的線上履歷表</title>
+    <title>resume</title>
 </head>
 <body  id="top">
     <!-- 導覽列 -->
