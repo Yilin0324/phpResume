@@ -1,6 +1,6 @@
 <?php include_once "../base.php";?>
 
-<h3 class='cent'>編輯次選單</h3>
+<h3 class='cent' style="margin: 5px;">編輯次選單</h3>
 <hr>
 
 <form action="api/submenu.php" method="post" enctype="multipart/form-data">
