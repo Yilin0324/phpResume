@@ -5,7 +5,7 @@
         <table width="100%" class="table table-bordered table-striped text-center">
             <tbody>
                 <tr>
-                    <td width="45%">網站標題</td>
+                    <td width="45%">履歷照片</td>
                     <td width="23%">替代文字</td>
                     <td width="7%">顯示</td>
                     <td width="7%">刪除</td>
