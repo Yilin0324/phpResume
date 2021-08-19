@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- bootstarp -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA==" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js" integrity="sha512-PqRelaJGXVuQ81N6wjUrRQelCDR7z8RvKGiR9SbSxKHPIt15eJDmIVv9EJgwq0XvgylszsjzvQ0+VyI2WtIshQ==" crossorigin="anonymous"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/custom21.css">
 
@@ -20,14 +23,14 @@
 </head>
 <body  id="top">
     <!-- 導覽列 -->
-<header class="fixed-top" id="Menu">
-    <nav class="navbar  navbar-expand-md navbar-dark" id="header-nav">
+    <header class="fixed-top" id="Menu">
+    <nav class="navbar navbar-expand-md navbar-dark" id="header-nav">
       <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#hero"><i class="far fa-smile"></i>
           Resume</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mr-2">
+          <ul class="navbar-nav ms-auto me-2">
             <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link smooth-scroll" href="#resume">Experience</a></li>
             <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
@@ -37,7 +40,7 @@
         </div>
       </div>
     </nav>
-</header>
+  </header>
  <!-- home -->
 <?php
   $heros=$Hero->all(['sh'=>1]);
@@ -90,7 +93,7 @@
         </div>
         <div>
         <ul class="list-unstyled list-social d-flex flex-row mt-3">
-            <li class="mr-2"><a href="https://github.com/Yilin0324"><i class="fab fa-github"></i></a></li>
+            <li class="me-2"><a href="https://github.com/Yilin0324"><i class="fab fa-github"></i></a></li>
             <li class="mx-2"><a href="https://www.facebook.com/profile.php?id=100003084587939"><i class="fab fa-facebook"></i></a></li>
             <li class="mx-2"><a href="https://www.instagram.com/chang_yi_lin?r=nametag"><i class="fab fa-instagram"></i></a></li>
             <li class="mx-2"><a href="https://www.linkedin.com/in/張-貽琳-b1a712184"><i class="fab fa-linkedin"></i></a></li>
@@ -276,7 +279,7 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
