@@ -1,10 +1,10 @@
 <div style="width:99%; margin:auto;">
-    <p class="w-100 h5 text-center mt-2"><?=$ts[$do];?></p>
+<h4 class="w-100 h4 text-center mt-2 p-4"><?=$ts[$do];?></h4>
     
     <form method="post" action="api/edit.php">
-        <table class="table table-bordered table-striped text-center w100">
+        <table class="table table-bordered text-center w100">
             <tbody>
-                <tr class="w-100">
+                <tr class="w-100" style="background: lightgrey;">
                     <td width="20%">技能類別</td>
                     <td width="50%">技能名稱</td>
                     <td>顯示</td>

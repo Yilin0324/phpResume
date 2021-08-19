@@ -1,10 +1,10 @@
 <div style="width:99%; margin:auto;">
-<p class="w-100 h5 text-center mt-2"><?=$ts[$do];?></p>
+<h4 class="w-100 h4 text-center mt-2 p-4"><?=$ts[$do];?></h4>
     
     <form method="post" action="api/edit.php">
-        <table width="100%" class="table table-bordered table-striped text-center">
+        <table width="100%" class="table table-bordered text-center">
             <tbody>
-                <tr>
+                <tr style="background: lightgrey;">
                     <td>公司名稱、職位名稱</td>
                     <td>時間</td>
                     <td width="50%">工作內容</td>
@@ -64,7 +64,7 @@ foreach ($rows as $key => $value) {
         ?>
         </div>
 
-        <table style="margin-top:40px; width:70%;">
+        <table style="margin-top:20px; width:70%;">
             <tbody>
                 <tr>
                     <td width="200px">

@@ -90,10 +90,10 @@
         </div>
         <div>
         <ul class="list-unstyled list-social d-flex flex-row mt-3">
-            <li class="mr-2"><a href="#"><i class="fab fa-github"></i></a></li>
-            <li class="mx-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li class="mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li class="mx-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li class="mr-2"><a href="https://github.com/Yilin0324"><i class="fab fa-github"></i></a></li>
+            <li class="mx-2"><a href="https://www.facebook.com/profile.php?id=100003084587939"><i class="fab fa-facebook"></i></a></li>
+            <li class="mx-2"><a href="https://www.instagram.com/chang_yi_lin?r=nametag"><i class="fab fa-instagram"></i></a></li>
+            <li class="mx-2"><a href="https://www.linkedin.com/in/張-貽琳-b1a712184"><i class="fab fa-linkedin"></i></a></li>
       </ul>
         </div>
 

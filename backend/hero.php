@@ -1,10 +1,10 @@
 <div style="width:99%; margin:auto;">
-<p class="w-100 h5 text-center mt-2"><?=$ts[$do];?></p>
+<h4 class="w-100 h4 text-center mt-2 p-4"><?=$ts[$do];?></h4>
     
     <form method="post" action="api/edit.php">
-        <table width="100%" class="table table-bordered table-striped text-center">
+        <table width="100%" class="table table-bordered text-center">
             <tbody>
-                <tr>
+                <tr style="background: lightgrey;">
                     <td>背景</td>
                     <td>標題</td>
                     <td>次標題</td>
