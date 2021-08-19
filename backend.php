@@ -1,5 +1,10 @@
 ﻿<?php include "base.php";?>
+<?php
+if(!isset($_SESSION['admin'])){
+    to("front/login.php");
+}
 
+?>
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0068)?do=admin&redo=title -->
@@ -108,7 +113,7 @@
                     <a href="?do=admin" class="text-light ">管理者帳號管理</a>
                     </li>
                     <li class="list-group-item list-group-item-action bg-dark text-light"
-                     onclick="location.replace(&#39;index.php&#39;)" style="cursor: pointer;">管理登出
+                     onclick="location.replace(&#39;api/logout.php&#39;)" style="cursor: pointer;">管理登出
                     </li>
                     
                 </ul>
